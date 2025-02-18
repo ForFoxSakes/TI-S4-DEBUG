@@ -54,16 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/TI-S4-VOS/src
+CMAKE_SOURCE_DIR = /workspaces/TI-S4-DEBUG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/TI-S4-VOS/src/build
+CMAKE_BINARY_DIR = /workspaces/TI-S4-DEBUG/src/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/logging_app.dir/all
+all: CMakeFiles/app.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/logging_app.dir/clean
+clean: CMakeFiles/app.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/logging_app.dir
+# Target rules for target CMakeFiles/app.dir
 
 # All Build rule for target.
-CMakeFiles/logging_app.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/TI-S4-VOS/src/build/CMakeFiles --progress-num=1,2,3 "Built target logging_app"
-.PHONY : CMakeFiles/logging_app.dir/all
+CMakeFiles/app.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/TI-S4-DEBUG/src/build/CMakeFiles --progress-num=1,2,3 "Built target app"
+.PHONY : CMakeFiles/app.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/logging_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-VOS/src/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/logging_app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-VOS/src/build/CMakeFiles 0
-.PHONY : CMakeFiles/logging_app.dir/rule
+CMakeFiles/app.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/src/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/app.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/src/build/CMakeFiles 0
+.PHONY : CMakeFiles/app.dir/rule
 
 # Convenience name for target.
-logging_app: CMakeFiles/logging_app.dir/rule
-.PHONY : logging_app
+app: CMakeFiles/app.dir/rule
+.PHONY : app
 
 # clean rule for target.
-CMakeFiles/logging_app.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/clean
-.PHONY : CMakeFiles/logging_app.dir/clean
+CMakeFiles/app.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/clean
+.PHONY : CMakeFiles/app.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

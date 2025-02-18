@@ -1,5 +1,5 @@
-CMakeFiles/logging_app.dir/main.cc.o: /workspaces/TI-S4-VOS/src/main.cc \
- /usr/include/stdc-predef.h /workspaces/TI-S4-VOS/src/Logger.hh \
+CMakeFiles/app.dir/Logger.cc.o: /workspaces/TI-S4-DEBUG/src/Logger.cc \
+ /usr/include/stdc-predef.h /workspaces/TI-S4-DEBUG/src/Logger.hh \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

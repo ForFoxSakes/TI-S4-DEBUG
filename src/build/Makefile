@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/TI-S4-VOS/src
+CMAKE_SOURCE_DIR = /workspaces/TI-S4-DEBUG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/TI-S4-VOS/src/build
+CMAKE_BINARY_DIR = /workspaces/TI-S4-DEBUG/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-VOS/src/build/CMakeFiles /workspaces/TI-S4-VOS/src/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/src/build/CMakeFiles /workspaces/TI-S4-DEBUG/src/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-VOS/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named logging_app
+# Target rules for targets named app
 
 # Build rule for target.
-logging_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logging_app
-.PHONY : logging_app
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-logging_app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/build
-.PHONY : logging_app/fast
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
 Logger.o: Logger.cc.o
 .PHONY : Logger.o
 
 # target to build an object file
 Logger.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/Logger.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Logger.cc.o
 .PHONY : Logger.cc.o
 
 Logger.i: Logger.cc.i
@@ -142,7 +142,7 @@ Logger.i: Logger.cc.i
 
 # target to preprocess a source file
 Logger.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/Logger.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Logger.cc.i
 .PHONY : Logger.cc.i
 
 Logger.s: Logger.cc.s
@@ -150,7 +150,7 @@ Logger.s: Logger.cc.s
 
 # target to generate assembly for a file
 Logger.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/Logger.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Logger.cc.s
 .PHONY : Logger.cc.s
 
 main.o: main.cc.o
@@ -158,7 +158,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/main.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -166,7 +166,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/main.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -174,7 +174,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logging_app.dir/build.make CMakeFiles/logging_app.dir/main.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cc.s
 .PHONY : main.cc.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... logging_app"
+	@echo "... app"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"

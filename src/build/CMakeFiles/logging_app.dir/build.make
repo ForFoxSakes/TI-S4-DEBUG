@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/TI-S4-VOS/src
+CMAKE_SOURCE_DIR = /workspaces/TI-S4-DEBUG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/TI-S4-VOS/src/build
+CMAKE_BINARY_DIR = /workspaces/TI-S4-DEBUG/src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/logging_app.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/logging_app.dir/flags.make
 CMakeFiles/logging_app.dir/main.cc.o: CMakeFiles/logging_app.dir/flags.make
 CMakeFiles/logging_app.dir/main.cc.o: ../main.cc
 CMakeFiles/logging_app.dir/main.cc.o: CMakeFiles/logging_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/TI-S4-VOS/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/logging_app.dir/main.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/logging_app.dir/main.cc.o -MF CMakeFiles/logging_app.dir/main.cc.o.d -o CMakeFiles/logging_app.dir/main.cc.o -c /workspaces/TI-S4-VOS/src/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/TI-S4-DEBUG/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/logging_app.dir/main.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/logging_app.dir/main.cc.o -MF CMakeFiles/logging_app.dir/main.cc.o.d -o CMakeFiles/logging_app.dir/main.cc.o -c /workspaces/TI-S4-DEBUG/src/main.cc
 
 CMakeFiles/logging_app.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logging_app.dir/main.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TI-S4-VOS/src/main.cc > CMakeFiles/logging_app.dir/main.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TI-S4-DEBUG/src/main.cc > CMakeFiles/logging_app.dir/main.cc.i
 
 CMakeFiles/logging_app.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logging_app.dir/main.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TI-S4-VOS/src/main.cc -o CMakeFiles/logging_app.dir/main.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TI-S4-DEBUG/src/main.cc -o CMakeFiles/logging_app.dir/main.cc.s
 
 CMakeFiles/logging_app.dir/Logger.cc.o: CMakeFiles/logging_app.dir/flags.make
 CMakeFiles/logging_app.dir/Logger.cc.o: ../Logger.cc
 CMakeFiles/logging_app.dir/Logger.cc.o: CMakeFiles/logging_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/TI-S4-VOS/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/logging_app.dir/Logger.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/logging_app.dir/Logger.cc.o -MF CMakeFiles/logging_app.dir/Logger.cc.o.d -o CMakeFiles/logging_app.dir/Logger.cc.o -c /workspaces/TI-S4-VOS/src/Logger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/TI-S4-DEBUG/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/logging_app.dir/Logger.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/logging_app.dir/Logger.cc.o -MF CMakeFiles/logging_app.dir/Logger.cc.o.d -o CMakeFiles/logging_app.dir/Logger.cc.o -c /workspaces/TI-S4-DEBUG/src/Logger.cc
 
 CMakeFiles/logging_app.dir/Logger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logging_app.dir/Logger.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TI-S4-VOS/src/Logger.cc > CMakeFiles/logging_app.dir/Logger.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TI-S4-DEBUG/src/Logger.cc > CMakeFiles/logging_app.dir/Logger.cc.i
 
 CMakeFiles/logging_app.dir/Logger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logging_app.dir/Logger.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TI-S4-VOS/src/Logger.cc -o CMakeFiles/logging_app.dir/Logger.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TI-S4-DEBUG/src/Logger.cc -o CMakeFiles/logging_app.dir/Logger.cc.s
 
 # Object files for target logging_app
 logging_app_OBJECTS = \
@@ -109,7 +109,7 @@ logging_app: CMakeFiles/logging_app.dir/main.cc.o
 logging_app: CMakeFiles/logging_app.dir/Logger.cc.o
 logging_app: CMakeFiles/logging_app.dir/build.make
 logging_app: CMakeFiles/logging_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/TI-S4-VOS/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable logging_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/TI-S4-DEBUG/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable logging_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/logging_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/logging_app.dir/clean:
 .PHONY : CMakeFiles/logging_app.dir/clean
 
 CMakeFiles/logging_app.dir/depend:
-	cd /workspaces/TI-S4-VOS/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/TI-S4-VOS/src /workspaces/TI-S4-VOS/src /workspaces/TI-S4-VOS/src/build /workspaces/TI-S4-VOS/src/build /workspaces/TI-S4-VOS/src/build/CMakeFiles/logging_app.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspaces/TI-S4-DEBUG/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/TI-S4-DEBUG/src /workspaces/TI-S4-DEBUG/src /workspaces/TI-S4-DEBUG/src/build /workspaces/TI-S4-DEBUG/src/build /workspaces/TI-S4-DEBUG/src/build/CMakeFiles/logging_app.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/logging_app.dir/depend
 

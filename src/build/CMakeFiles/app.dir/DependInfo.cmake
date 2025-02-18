@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspaces/TI-S4-DEBUG/src/Logger.cc" "CMakeFiles/logging_app.dir/Logger.cc.o" "gcc" "CMakeFiles/logging_app.dir/Logger.cc.o.d"
-  "/workspaces/TI-S4-DEBUG/src/main.cc" "CMakeFiles/logging_app.dir/main.cc.o" "gcc" "CMakeFiles/logging_app.dir/main.cc.o.d"
+  "/workspaces/TI-S4-DEBUG/src/Logger.cc" "CMakeFiles/app.dir/Logger.cc.o" "gcc" "CMakeFiles/app.dir/Logger.cc.o.d"
+  "/workspaces/TI-S4-DEBUG/src/main.cc" "CMakeFiles/app.dir/main.cc.o" "gcc" "CMakeFiles/app.dir/main.cc.o.d"
   )
 
 # Targets to which this target links.
