@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/workspaces/TI-S4-VOS/src/build",
+  "command": "/usr/bin/c++ -DENABLE_LOGGING  -g -std=gnu++17 -o CMakeFiles/logging_app.dir/main.cc.o -c /workspaces/TI-S4-VOS/src/main.cc",
+  "file": "/workspaces/TI-S4-VOS/src/main.cc"
+},
+{
+  "directory": "/workspaces/TI-S4-VOS/src/build",
+  "command": "/usr/bin/c++ -DENABLE_LOGGING  -g -std=gnu++17 -o CMakeFiles/logging_app.dir/Logger.cc.o -c /workspaces/TI-S4-VOS/src/Logger.cc",
+  "file": "/workspaces/TI-S4-VOS/src/Logger.cc"
+}
+]
