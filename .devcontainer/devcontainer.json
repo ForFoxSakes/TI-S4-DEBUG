@@ -10,6 +10,7 @@
                 "ms-vscode.cpptools",
                 "ms-vscode.cmake-tools",
                 "twxs.cmake",
+                    "ms-vscode.remote-containers",
                 "ms-vscode.cpptools-extension-pack",
                 "JoshJun.XmlTools"
             ]
@@ -24,3 +25,4 @@
         "-v", "/tmp/.X11-unix:/tmp/.X11-unix"
     ]
 }
+
