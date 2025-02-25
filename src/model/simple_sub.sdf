@@ -1,17 +1,36 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
     <world name="default">
+        <!-- ODE Physics Engine Configuratie -->
+        <physics name="default_physics" type="ode">
+            <max_step_size>0.001</max_step_size>
+            <real_time_factor>1</real_time_factor>
+            <real_time_update_rate>1000</real_time_update_rate>
+            <ode>
+                <solver>
+                    <type>quick</type>
+                    <iters>50</iters>
+                </solver>
+                <constraints>
+                    <cfm>0.00001</cfm>
+                    <erp>0.2</erp>
+                </constraints>
+            </ode>
+        </physics>
+
         <model name="simple_submarine">
             <static>false</static>
+
             <link name="body">
                 <inertial>
-                    <mass>1.0</mass>
+                    <mass>10.0</mass>
                     <inertia>
-                        <ixx>0.1</ixx>
-                        <iyy>0.1</iyy>
-                        <izz>0.1</izz>
+                        <ixx>1.0</ixx>
+                        <iyy>1.0</iyy>
+                        <izz>1.0</izz>
                     </inertia>
                 </inertial>
+
                 <visual name="body_visual">
                     <geometry>
                         <cylinder>
@@ -20,6 +39,7 @@
                         </cylinder>
                     </geometry>
                 </visual>
+
                 <collision name="body_collision">
                     <geometry>
                         <cylinder>
@@ -28,15 +48,15 @@
                         </cylinder>
                     </geometry>
                 </collision>
-            </link>
 
-            <plugin name="BuoyancyPlugin" filename="libBuoyancyPlugin.so">
-                <fluid_density>1000</fluid_density>
-                <link name="body">
-                    <center_of_volume>0 0 0</center_of_volume>
-                    <volume>100</volume>
-                </link>
-            </plugin>
+                <!-- Plugin voor beweging via krachten -->
+                <plugin name="force_based_move" filename="libgazebo_ros_force_based_move.so">
+                    <link_name>body</link_name>
+                    <topic>/cmd_vel</topic>
+                </plugin>
+            </link>
         </model>
+
+        <gravity>0 0 0</gravity>
     </world>
 </sdf>

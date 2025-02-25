@@ -12,7 +12,7 @@
                 "twxs.cmake",
                     "ms-vscode.remote-containers",
                 "ms-vscode.cpptools-extension-pack",
-                "JoshJun.XmlTools"
+                "joshjun.xmltools"
             ]
         }
     },
