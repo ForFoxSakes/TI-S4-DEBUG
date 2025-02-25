@@ -1,5 +1,4 @@
-# Gebruik een Gazebo base image
-FROM ubuntu:20.04
+FROM ubuntu:noble
 
 # Voorkom interactieve prompts tijdens installatie
 ENV DEBIAN_FRONTEND=noninteractive
@@ -10,25 +9,31 @@ RUN apt-get update && apt-get install -y \
     cmake \
     gdb \
     git \
+    gnupg2 \
+    lsb-release \
     vim \
     clang \
     clang-format \
     clang-tidy \
     valgrind \
-    libgazebo11-dev \
-    libeigen3-dev \
-    libprotobuf-dev \
-    protobuf-compiler \
-    libprotoc-dev \
-    python3-pip \
-    && rm -rf /var/lib/apt/lists/*
+    curl \
+    sudo \
+    wget
+
 
 # Voeg de Gazebo repository toe
-RUN curl https://packages.osrfoundation.org/gazebo.gpg --output /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
-RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/gazebo-stable.list > /dev/null
-RUN apt-get update && apt-get install -y gazebo11
+RUN curl -fsSL https://packages.osrfoundation.org/gazebo.gpg -o /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
 
-# Stel de werkdirectory in naar je src folder
+RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" > /etc/apt/sources.list.d/gazebo-stable.list
+
+# Werk de pakketlijst bij en installeer Gazebo Ionic
+RUN apt-get update && apt-get install -y gz-ionic
+
+# Opruimen
+RUN rm -rf /var/lib/apt/lists/*
+
+
+#Stel de werkdirectory in naar je src folder
 WORKDIR /workspaces/TI-S4-VOS/src
 
 CMD ["sleep", "infinity"]
