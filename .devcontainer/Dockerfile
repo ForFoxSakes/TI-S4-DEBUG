@@ -1,5 +1,5 @@
-# Gebruik een Ubuntu base image
-FROM ubuntu:22.04
+# Gebruik een Gazebo base image
+FROM gazebo:latest
 
 # Voorkom interactieve prompts tijdens installatie
 ENV DEBIAN_FRONTEND=noninteractive
