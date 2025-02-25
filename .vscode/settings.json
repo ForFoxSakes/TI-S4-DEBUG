@@ -45,6 +45,7 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/workspaces/TI-S4-DEBUG/src"
 }
 

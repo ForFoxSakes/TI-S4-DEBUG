@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+    <world name="car_world">
+        <physics name="1ms" type="ode">
+            <max_step_size>0.001</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        <gravity>0 0 -1.0</gravity>
+
+        <model name="submarine">
+            <static>false</static>
+            <link name="body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <iyy>0.1</iyy>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+                <visual name="body_visual">
+                    <geometry>
+                        <cylinder>
+                            <radius>0.3</radius>
+                            <length>1.0</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>0.1 0.1 0.3 1</ambient>
+                        <diffuse>0.1 0.1 0.5 1</diffuse>
+                    </material>
+                </visual>
+                <collision name="body_collision">
+                    <geometry>
+                        <cylinder>
+                            <radius>0.3</radius>
+                            <length>1.0</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+            </link>
+
+            <link name="propeller_rear">
+                <visual name="propeller_visual">
+                    <geometry>
+                        <cylinder>
+                            <radius>0.1</radius>
+                            <length>0.05</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>0.2 0.2 0.2 1</ambient>
+                        <diffuse>0.5 0.5 0.5 1</diffuse>
+                    </material>
+                </visual>
+                <collision name="propeller_collision">
+                    <geometry>
+                        <cylinder>
+                            <radius>0.1</radius>
+                            <length>0.05</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+                <pose>0 -0.5 0 0 0 0</pose>
+            </link>
+
+            <link name="periscope">
+                <visual name="periscope_visual">
+                    <geometry>
+                        <cylinder>
+                            <radius>0.05</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>0.3 0.3 0.3 1</ambient>
+                        <diffuse>0.5 0.5 0.5 1</diffuse>
+                    </material>
+                </visual>
+                <pose>0 0 0.4 0 0 0</pose>
+            </link>
+            <plugin name="BuoyancyPlugin" filename="libBuoyancyPlugin.so">
+                <fluid_density>1000</fluid_density>
+                <link name="body">
+                    <center_of_volume>0 0 0</center_of_volume>
+                    <volume>100</volume>
+                </link>
+            </plugin>
+        </model>
+    </world>
+</sdf>

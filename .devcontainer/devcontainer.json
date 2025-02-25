@@ -10,11 +10,17 @@
                 "ms-vscode.cpptools",
                 "ms-vscode.cmake-tools",
                 "twxs.cmake",
-                "ms-vscode.cpptools-extension-pack"
+                "ms-vscode.cpptools-extension-pack",
+                "JoshJun.XmlTools"
             ]
         }
     },
+
     "remoteUser": "root",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/TI-S4-VOS,type=bind",
-    "workspaceFolder": "/workspaces/TI-S4-VOS"
+    "workspaceFolder": "/workspaces/TI-S4-VOS",
+    "runArgs": [
+        "-e", "DISPLAY=host.docker.internal:0",
+        "-v", "/tmp/.X11-unix:/tmp/.X11-unix"
+    ]
 }

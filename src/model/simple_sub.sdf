@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+    <world name="default">
+        <model name="simple_submarine">
+            <static>false</static>
+            <link name="body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <iyy>0.1</iyy>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+                <visual name="body_visual">
+                    <geometry>
+                        <cylinder>
+                            <radius>0.3</radius>
+                            <length>1.0</length>
+                        </cylinder>
+                    </geometry>
+                </visual>
+                <collision name="body_collision">
+                    <geometry>
+                        <cylinder>
+                            <radius>0.3</radius>
+                            <length>1.0</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+            </link>
+
+            <plugin name="BuoyancyPlugin" filename="libBuoyancyPlugin.so">
+                <fluid_density>1000</fluid_density>
+                <link name="body">
+                    <center_of_volume>0 0 0</center_of_volume>
+                    <volume>100</volume>
+                </link>
+            </plugin>
+        </model>
+    </world>
+</sdf>
