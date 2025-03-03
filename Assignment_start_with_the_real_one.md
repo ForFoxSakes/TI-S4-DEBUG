@@ -24,7 +24,7 @@ Ontwikkel 3D-modellen voor visualisatie en testen
 Definieer alle benodigde actuatoren
 Implementeer voortstuwingsmechanismen (motoren, propellers)
 Ontwerp besturingsoppervlakken (vinnen, roeren)
-Overweeg aanvullende manipulatiemogelijkheden (robotarm)
+Toevoeging van Robotarm
 
 ### 5. Sensorpakket
 
