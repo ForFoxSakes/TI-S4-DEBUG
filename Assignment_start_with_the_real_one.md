@@ -1,5 +1,5 @@
-# Duikboot project organisatiestructuur
-### 1. simulatie
+## Duikboot project organisatiestructuur
+### 1. Simulatie bepaling
 
 Bepaal simulatie-instellingen en wereldparameters
 definieer vereiste acties en situaties die gesimuleerd moeten worden
@@ -34,7 +34,7 @@ omgevingssensoren (LIDAR, lichtsensoren)
 bewegings- en oriëntatiesensoren toe
 
 
-## 6. Communicatiesystemen
+### 6. Communicatiesystemen
 
 Stel protocollen vast voor communicatie met externe apparaten
 Ontwerp interface voor grondcontrole
