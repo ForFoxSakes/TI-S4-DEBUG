@@ -51,7 +51,7 @@ Toevoeging van Robotarm.
 
 Onderzoek geschikbare plugins voor sensoren.
 Visionsystemen en camera's.
-omgevingssensoren (LIDAR, lichtsensoren).
+omgevingssensoren (LIDAR, Sonar).
 bewegings- en oriëntatiesensoren toe.
 
 
