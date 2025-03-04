@@ -16,7 +16,13 @@ Indicatoren:
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
-| `Portfolio-item A` | `plaats hier een korte uitleg over wat je hebt gedaan` | [link naar ...](http://) |
+| `Broncode simulatie` | `De brondcode geleverd van de uit te voeren simulatie` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#13-Bijlagen) |
+| `Projectcode` | `Alle code met betrekking tot het project` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#13-Bijlagen) |
+| `Vision opdrachten` | `Opdrachten Vision van College Computer Vision I (Basis beeldverwerking)` | [link naar ...](http://) |
+| `Algoritmiek opdrachten` | `Algoritmiek opdrachten van College Algoritmen & Datastructuren (C++ / Python)` | [link naar ...](http://) |
+| `C++ STL Opdrachten` | `Opdrachten van het College Labmda's ` | [link naar ...](http://) |
+| `C++<->Python opdrachten` | `Opdrachten van het College Koppeling Python ↔ C++ (Interfacing)` | [link naar ...](http://) |
+| `Creational/Structural design pattern opdrachten` | `Opdrachten van College Structural Design Patterns` | [link naar ...](http://) |
 
 Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
 

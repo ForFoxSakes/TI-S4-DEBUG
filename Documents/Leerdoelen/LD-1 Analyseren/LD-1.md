@@ -9,7 +9,7 @@ Indicatoren
 - Ontwikkeldocument (eerste deel)
 ---
 
-**Leeruitkomst 1 Persoonlijke opdrachten:**
+### **Leeruitkomst 1 Persoonlijke opdrachten:**
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
@@ -23,16 +23,20 @@ Beschrijving van de feedback die ik heb ontvangen op de portfolio-items.
 
 --
 
-**Leeruitkomst 1 Projectopdrachten:**
+### **Leeruitkomst 1 Projectopdrachten:**
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
 | `Requirements Analyse` | `Requirements analyse opgesteld vanuit de stakeholderanalyse en interviews` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#4-Requirements) |
-| `Stakeholder Analyse` | belanghebbenden van het project geïdentificeerd, geanalyseerd en geclassificeerd op basis van hun belangen, invloed en betrokkenheid bij het project` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#3-Stakeholderanalyse) |
+| `Stakeholder Analyse` | `Belanghebbenden van het project geïdentificeerd, geanalyseerd en geclassificeerd op basis van hun belangen, invloed en betrokkenheid bij het project` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#3-Stakeholderanalyse) |
+| `Testplan` | `Teststrategie opgezet, testgevallen geïdentificeerd en Testresultaten genoteerd` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#10-Testen) |
+| `Ontwikkeldocument` | `Benodigdheden voor Ontwikkeldocument vastgesteld en verzameld` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#10-Testen) |
 
-Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
+### Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
+ 
+ #### `Ontwikkeldocument`
+ Om het ontwikkeldocument op te zetten is er een analyse nodig geweest naar wat er in het algemeen nodig is voor het project. In het begin van deze fase is er nog niet veel informatie beschikbaar. Maar er zijn al wel mogelijk de requirements vast te stellen in het ontwikkeldocument. Hiervoor heb ik gekeken wat deze requirements zijn door naar de leerdoelen te kijken en hoe het project verder in elkaar zit.
 
---
 
 Beschrijving van de feedback die ik heb ontvangen op de portfolio-items.
 

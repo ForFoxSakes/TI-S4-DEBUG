@@ -69,6 +69,7 @@ Korte evaluatie van het project, en wat er verder ondernomen moet worden.
 
 ## 13. Bijlagen
 - Bronnen
+- Broncode
 - Technische documentatie
 - Gebruikte datasets
 - Installatiehandleiding
