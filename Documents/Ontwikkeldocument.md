@@ -24,47 +24,50 @@ Beschrijf kort de context van het project, de aanleiding en het doel.
 - Doelgroep
 - Eisen en wensen
 
-## 3. Requirements
-### 3.1 Functionele Requirements
+## 3. Stakeholderanalyse
+Identificeer de belangrijkste stakeholders, hun belangen en invloed op het project.
+
+## 4. Requirements
+### 4.1 Functionele Requirements
 Lijst van functionele eisen met beschrijvingen.
 
-### 3.2 Niet-functionele Requirements
+### 4.2 Niet-functionele Requirements
 Lijst van niet-functionele eisen zoals prestaties, beveiliging en betrouwbaarheid.
 
-## 4. Systeemarchitectuur
+## 5. Systeemarchitectuur
 Geef een overzicht van de systeemarchitectuur met diagrammen (bijv. componentendiagram, sequence diagram).
 
-## 5. Technologieën en Tools
+## 6. Technologieën en Tools
 - Programmeertalen
 - Frameworks
 - Bibliotheken
 - Ontwikkeltools
 - Versiebeheer
 
-## 6. Functionaliteiten
+## 7. Functionaliteiten
 Lijst van de belangrijkste functionaliteiten met korte beschrijvingen.
 
-## 7. Ontwerp
-### 7.1 Use Cases
-### 7.2 Datamodel
-### 7.3 User Interface
+## 8. Ontwerp
+### 8.1 Use Cases
+### 8.2 Datamodel
+### 8.3 User Interface
 Mock-ups, wireframes en uitleg van de gebruikersinterface.
 
-## 8. Implementatie
+## 9. Implementatie
 Beschrijving van de implementatie per module/onderdeel, inclusief codevoorbeelden indien nodig.
 
-## 9. Testen
+## 10. Testen
 - Teststrategie
 - Testgevallen
 - Testresultaten
 
-## 10. Resultaten
+## 11. Resultaten
 Samenvatting van de behaalde resultaten en hoe deze voldoen aan de eisen en wensen.
 
-## 11. Adviesrapport
-Korte evaluatie van het project, en wat er verder ondernomen moet worden
+## 12. Adviesrapport
+Korte evaluatie van het project, en wat er verder ondernomen moet worden.
 
-## 12. Bijlagen
+## 13. Bijlagen
 - Bronnen
 - Technische documentatie
 - Gebruikte datasets
@@ -75,4 +78,3 @@ Korte evaluatie van het project, en wat er verder ondernomen moet worden
 **Auteur:** Matthijs Vos
 **Datum:** MM-DD-YYYY
 **Versie:** 1.0
-
