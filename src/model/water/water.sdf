@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="water">
+  <static>true</static>
+
+    <link name="water_link">
+
+      <visual name="visual1">
+        <geometry>
+          <box>
+            <size>10 10 10</size> 
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1 0.3 0.8 0.8</ambient> 
+          <diffuse>0.1 0.3 0.8 0.8</diffuse> 
+          <specular>0.1 0.1 0.1 0.1</specular> 
+        </material>
+      </visual>
+    </link>
+
+    
+    <pose>0 0 6 0 0 0</pose> 
+  </model>
+</sdf>

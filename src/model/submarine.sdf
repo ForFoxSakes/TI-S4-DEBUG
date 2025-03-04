@@ -1,161 +1,334 @@
 <?xml version="1.0" ?>
-<sdf version="1.6">
-
-  <model name="chasing_rov_m2">
-    <static>false</static>
+<sdf version="1.11">
+<world name="underwater_test">
+<gravity>0 0 -0.2</gravity>
+  <model name="test_v5">
+  <plugin name="apply_force_plugin" filename="libapply_force_plugin.so">
+  </plugin>
+          <pose>0 0 10 0 0 0</pose>
     <link name="base_link">
       <inertial>
-        <mass>4.5</mass>
+        <mass>0.0001</mass>
         <inertia>
-          <ixx>0.0347</ixx>
+          <ixx>1e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.0517</iyy>
+          <iyy>1e-09</iyy>
           <iyz>0</iyz>
-          <izz>0.0764</izz>
+          <izz>1e-09</izz>
         </inertia>
-        <pose>0 0 0 0 0 0</pose>
       </inertial>
-      
-      <collision name="collision">
+    </link>
+    <link name="component1_1">
+      <inertial>
+
+        <mass>192.82168520553324</mass>
+        <inertia>
+          <ixx>1.2144872137607212</ixx>
+          <ixy>0.0</ixy>
+          <ixz>-4.440892098500626e-16</ixz>
+          <iyy>5.681135836101559</iyy>
+          <iyz>0.0</iyz>
+          <izz>6.17597261369616</izz>
+        </inertia>
+      </inertial>
+      <visual name="component1_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component1_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component1_1__body1_collision">
+        <pose relative_to="__model__">0.19 0.1335 0.0825 -0.0 -1.5707963267948966 0</pose>
         <geometry>
           <box>
-            <size>38 26.7 16.5</size>
+            <size>0.165 0.267 0.647</size>
           </box>
         </geometry>
       </collision>
-      
-      <visual name="visual">
-        <geometry>
-          <box>
-            <size>38 26.7 16.5</size>
-          </box>
-        </geometry>
-        <material>
-          <ambient>0.1 0.1 0.1 1</ambient>
-          <diffuse>0.15 0.15 0.15 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
-        </material>
-      </visual>
-
-      <!-- Thrusters -->
-      <visual name="thruster_front_left">
-        <pose>1.6 1.1 0 0 0 0</pose>
-        <geometry>
-          <cylinder>
-            <radius>0.025</radius>
-            <length>0.06</length>
-          </cylinder>
-        </geometry>
-        <material>
-          <ambient>0.6 0.7 0.9 1</ambient>
-          <diffuse>0.7 0.8 1 1</diffuse>
-        </material>
-
-      </visual>
-      <visual name="thruster_front_right">
-        <pose>1.6 1.1 0 0 0 0</pose>
-        <geometry>
-          <cylinder>
-            <radius>0.025</radius>
-            <length>0.06</length>
-          </cylinder>
-        </geometry>
-        <material>
-          <ambient>0.7 0.9 0.7 1</ambient>
-          <diffuse>0.8 1 0.8 1</diffuse>
-        </material>
-      </visual>
-      
-      <visual name="thruster_rear_left">
-        <pose>-1.6 1.1 0 0 0 0</pose>
-        <geometry>
-          <cylinder>
-            <radius>0.025</radius>
-            <length>0.06</length>
-          </cylinder>
-        </geometry>
-        <material>
-          <ambient>0.9 0.9 0.6 1</ambient>
-          <diffuse>1 1 0.7 1</diffuse>
-        </material>
-      </visual>
-      
-      <visual name="thruster_rear_right">
-        <pose>-1.6 -1.1 0 0 0 0</pose>
-        <geometry>
-          <cylinder>
-            <radius>0.025</radius>
-            <length>0.06</length>
-          </cylinder>
-        </geometry>
-        <material>
-          <ambient>0.9 0.7 0.8 1</ambient>
-          <diffuse>1 0.8 0.9 1</diffuse>
-        </material>
-      </visual>
-      
-      <visual name="thruster_vertical_front">
-        <pose>1 0 0.8 0 1.5707 0</pose>
-        <geometry>
-          <cylinder>
-            <radius>0.025</radius>
-            <length>0.06</length>
-          </cylinder>
-        </geometry>
-        <material>
-          <ambient>0.1 0.1 0.1 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-        </material>
-      </visual>
-      
-      <visual name="thruster_vertical_rear">
-        <pose>-1 0 0.8 0 1.5707 0</pose>
-        <geometry>
-          <cylinder>
-            <radius>0.025</radius>
-            <length>0.06</length>
-          </cylinder>
-        </geometry>
-        <material>
-          <ambient>0.1 0.1 0.1 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-        </material>
-      </visual>
-      
-      <!-- Camera -->
-      <visual name="camera">
-        <pose>1.9 0 0 0 0 0</pose>
-        <geometry>
-          <box>
-            <size>0.03 0.05 0.05</size>
-          </box>
-        </geometry>
-        <material>
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-        </material>
-      </visual>
-      
-      <sensor name="camera" type="camera">
-        <pose>0.19 0 0 0 0 0</pose>
-        <camera>
-          <horizontal_fov>1.047</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-          </image>
-          <clip>
-            <near>0.1</near>
-            <far>100</far>
-          </clip>
-        </camera>
-        <always_on>1</always_on>
-        <update_rate>30</update_rate>
-        <visualize>true</visualize>
-      </sensor>
     </link>
-    
-   
+    <link name="component2_1">
+      <inertial>
+        <pose>0.0 0.25 0.165 0.0 -0.0 0.0</pose>
+        <mass>2.278701871403796</mass>
+        <inertia>
+          <ixx>0.0014583691976984559</ixx>
+          <ixy>-7.730704965069889e-19</ixy>
+          <ixz>-7.730704965069889e-19</ixz>
+          <iyy>0.001458369197698428</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.0014583691976984559</izz>
+        </inertia>
+      </inertial>
+      <visual name="component2_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component2_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component2_1__body1_collision">
+        <pose relative_to="__model__">0.0 0.25 0.165 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="component3_1">
+      <inertial>
+        <pose>0.38 0.27 0.1649999999999997 0.0 -0.0 0.0</pose>
+        <mass>2.278701871403796</mass>
+        <inertia>
+          <ixx>0.001458369197698428</ixx>
+          <ixy>0.0</ixy>
+          <ixz>-2.7755575615628914e-17</ixz>
+          <iyy>0.0014583691976984836</iyy>
+          <iyz>1.3877787807814457e-17</iyz>
+          <izz>0.0014583691976984836</izz>
+        </inertia>
+      </inertial>
+      <visual name="component3_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component3_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component3_1__body1_collision">
+        <pose relative_to="__model__">0.38 0.27 0.1649999999999997 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="component4_1">
+      <inertial>
+        <pose>0.38 0.0 0.165 0.0 -0.0 0.0</pose>
+        <mass>2.278701871403796</mass>
+        <inertia>
+          <ixx>0.001458369197698428</ixx>
+          <ixy>-7.730704965069889e-19</ixy>
+          <ixz>2.7755575615628914e-17</ixz>
+          <iyy>0.001458369197698428</iyy>
+          <iyz>-7.730704965069889e-19</iyz>
+          <izz>0.0014583691976984836</izz>
+        </inertia>
+      </inertial>
+      <visual name="component4_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component4_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component4_1__body1_collision">
+        <pose relative_to="__model__">0.38 0.0 0.165 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="component5_1">
+      <inertial>
+        <pose>0.0 0.0 0.165 0.0 -0.0 0.0</pose>
+        <mass>2.1044481988846826</mass>
+        <inertia>
+          <ixx>0.0013468468472861983</ixx>
+          <ixy>0.0</ixy>
+          <ixz>-7.139533408917486e-19</ixz>
+          <iyy>0.0013468468472861983</iyy>
+          <iyz>-7.139533408917486e-19</iyz>
+          <izz>0.0013468468472861972</izz>
+        </inertia>
+      </inertial>
+      <visual name="component5_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component5_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component5_1__body1_collision">
+        <pose relative_to="__model__">0.0 0.0 0.165 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="component6_1">
+      <inertial>
+        <mass>2.278701871403796</mass>
+        <inertia>
+          <ixx>0.00145836919769843</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.00145836919769843</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.00145836919769843</izz>
+        </inertia>
+      </inertial>
+      <visual name="component6_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component6_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component6_1__body1_collision">
+        <pose relative_to="__model__">0.0 0.0 0.0 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="component7_1">
+      <inertial>
+        <pose>0.38 0.0 0.0 0.0 -0.0 0.0</pose>
+        <mass>2.1044481988846826</mass>
+        <inertia>
+          <ixx>0.0013468468472861972</ixx>
+          <ixy>-7.139533408917486e-19</ixy>
+          <ixz>-7.139533408917486e-19</ixz>
+          <iyy>0.0013468468472861983</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.0013468468472861983</izz>
+        </inertia>
+      </inertial>
+      <visual name="component7_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component7_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component7_1__body1_collision">
+        <pose relative_to="__model__">0.38 0.0 0.0 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="component8_1">
+      <inertial>
+        <pose>0.0 0.25 0.0 0.0 -0.0 0.0</pose>
+        <mass>2.278701871403796</mass>
+        <inertia>
+          <ixx>0.0014583691976984559</ixx>
+          <ixy>-7.730704965069889e-19</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.00145836919769843</iyy>
+          <iyz>-7.730704965069889e-19</iyz>
+          <izz>0.0014583691976984559</izz>
+        </inertia>
+      </inertial>
+      <visual name="component8_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component8_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component8_1__body1_collision">
+        <pose relative_to="__model__">0.0 0.25 0.0 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="component9_1">
+      <inertial>
+        <pose>0.38 0.27 0.0 0.0 -0.0 0.0</pose>
+        <mass>2.278701871403796</mass>
+        <inertia>
+          <ixx>0.0014583691976984003</ixx>
+          <ixy>0.0</ixy>
+          <ixz>-7.730704965069889e-19</ixz>
+          <iyy>0.0014583691976984836</iyy>
+          <iyz>-7.730704965069889e-19</iyz>
+          <izz>0.0014583691976984836</izz>
+        </inertia>
+      </inertial>
+      <visual name="component9_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component9_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component9_1__body1_collision">
+        <pose relative_to="__model__">0.38 0.27 0.0 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.08 0.08 0.08</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="component10_1">
+      <inertial>
+        <pose>-0.010428677657031083 0.1335000019892508 0.1984934291309221 0.0 -0.0 0.0</pose>
+        <mass>0.9291492635185803</mass>
+        <inertia>
+          <ixx>0.0009051102801991145</ixx>
+          <ixy>-6.078037378953738e-16</ixy>
+          <ixz>6.400392222388404e-07</ixz>
+          <iyy>0.0003762723521830852</iyy>
+          <iyz>7.979727989493313e-17</iyz>
+          <izz>0.0005963367620533781</izz>
+        </inertia>
+      </inertial>
+      <visual name="component10_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/component10_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="component10_1__body1_collision">
+        <pose relative_to="__model__">-0.0125 0.133500001989305 0.20087500262074173 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.07175000032410025 0.08700000129640102 0.025</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="base_link_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>component8_1</child>
+      <axis/>
+    </joint>
   </model>
+    <include>
+      <uri>ground</uri>      
+    </include>
+        <include>
+      <uri>water</uri>      
+    </include>
+    </world>
 </sdf>

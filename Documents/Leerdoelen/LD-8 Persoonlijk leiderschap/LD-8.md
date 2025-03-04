@@ -12,8 +12,8 @@ Indicatoren:
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
-| `Sollicitatiebrief` | `Solicitatiebrief geschreven voor de functie van Technisch lead voor Submarine project` | [link naar ...](http://) |
-| `Professionaliseringsdocument` | `Solicitatiebrief geschreven voor de functie van Technisch lead voor Submarine project` | [link naar ...](http://) |
+| `Sollicitatiebrief` | `Solicitatiebrief geschreven voor de functie van Technisch lead voor Submarine project` | [link](https://github.com/ForFoxSakes/TI-S4-VOS/tree/main/Opdrachten/Solicitatiebrief%20en%20CV) |
+| `Professionaliseringsdocument` | `Professionaliseringsdocument geschreven voor de functie van Technisch lead voor Submarine project` | [link naar ...](http://) |
 
 Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
 
