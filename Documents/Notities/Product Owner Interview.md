@@ -58,35 +58,23 @@ Om deze informatie te verzamelen voor de requirements zijn er een aantal vragen 
 #### 3. Vragen m.b.t. Niet-Functionele Requirements
 ##### 3.1 Prestatie en schaalbaarheid
 
-3.1.1 Hoeveel gebruikers moeten gelijktijdig met de simulator kunnen werken?
-
-3.1.2 Welke minimale framerate is aanvaardbaar voor een realistische ervaring?
+3.1.1 Moeten gebruikers moeten gelijktijdig met de simulator kunnen werken?
 
 3.1.3 Welke hardware moet de simulatie ondersteunen?
 
 ##### 3.2 Gebruiksvriendelijkheid
 
 3.2.1 Wat is het technische niveau van de eindgebruikers?
-
+Brandweerlieden? Specifiek getrainde ? 
 3.2.2 Hoeveel training zou nodig moeten zijn om de simulator te kunnen gebruiken?
-
-3.2.3 Zijn er toegankelijkheidseisen voor gebruikers met een beperking?
 
 ##### 3.3 Betrouwbaarheid en veiligheid
 
-3.3.1 Welke uptime-vereisten heeft de simulator?
-
-3.3.2 Hoe belangrijk is het dat de simulatie waarheidsgetrouw is aan de fysieke werkelijkheid?
-
-3.3.3 Zijn er veiligheidseisen om gebruikers te beschermen tegen mogelijke nadelige effecten (zoals simulatieziekte)?
+3.3.1 Hoe belangrijk is het dat de simulatie waarheidsgetrouw is aan de fysieke werkelijkheid?
 
 ##### 3.4 Onderhoudbaarheid
 
-3.4.1 Wie zal verantwoordelijk zijn voor het onderhoud van de simulator?
-
-3.4.2 Hoe vaak verwacht u dat er updates of nieuwe scenario's toegevoegd moeten worden?
-
-3.4.3 Moet het systeem modulair zijn zodat er later nieuwe functionaliteiten toegevoegd kunnen worden?
+3.4.1 Moet het systeem modulair zijn zodat er later nieuwe functionaliteiten toegevoegd kunnen worden?
 
 ##### 3.5 Integratie
 
