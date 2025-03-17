@@ -20,32 +20,42 @@ Het doel van het onderzeeër-simulatieproject voor de brandweer is om een nauwke
 > *Identificeer de belangrijkste stakeholders, hun belangen en invloed op het project.*
 
 
-**Identificatie van stakeholders**  
-De twee belangrijkste stakeholders zijn:
-- **Brandweer** – De uiteindelijke gebruikers van de onderzeeër en de simulatie.  
-- **Ontwikkelaars van de onderzeeër** – Zij ontwikkelen de firmware en nieuwe functionaliteiten en gebruiken de simulatie als testomgeving.
+### **Inleiding**  
+Bij de ontwikkeling van de simulatie voor de onderzeedrone van de brandweer is het belangrijk om inzicht te krijgen in de betrokken stakeholders en hun impact op het project. Omdat de communicatie met stakeholders via de Product Owner verloopt, richt deze analyse zich op het identificeren van stakeholders, hun invloed en hun belangen. Dit helpt de Product Owner om effectief te communiceren en prioriteiten te stellen. Daarnaast wordt deze analyse gebruikt om de **vereisten (requirements) voor de simulatie** vast te stellen op basis van de behoeften van de stakeholders. De analyse is gebaseerd op Mendelow’s Power-Interest Matrix [(Oxford College of Marketing, 2018)](https://blog.oxfordcollegeofmarketing.com/2018/04/23/what-is-mendelows-matrix-and-how-is-it-useful/).  
 
-**Behoeften en belangen van stakeholders**  
-| Stakeholder | Behoeften | Invloed |
-|-------------|----------|---------|
-| Ontwikkelaars | Nauwkeurige weergave van functionaliteiten voor firmwaretests | Hoog |
-| Brandweer | Realistische simulatie van de onderzeeërbesturing | Hoog |
-**Prioritering van stakeholders**  
-| Stakeholder | Prioriteit |
-|-------------|-----------|
-| Ontwikkelaars | 1 |
-| Brandweer| 2 |
+---
 
-**Stakeholderanalyse-matrix**  
-| Stakeholder | Macht | Belang | Strategie |
-|-------------|-------|--------|-----------|
-| Brandweer | Hoog | Hoog | Actief betrekken en regelmatig trainen |
-| Ontwikkelaars | Hoog | Hoog | Nauw samenwerken bij simulatieontwikkeling |
+### **Power-Interest Matrix**  
 
-**Stakeholderkarakterisering**  
-- **Brandweer**: Actieve gebruikers die afhankelijk zijn van een realistische en intuïtieve simulatie om training en operationele efficiëntie te verbeteren. Ze hebben een hoge mate van invloed omdat hun feedback bepalend is voor de bruikbaarheid van de simulatie.
-    - **Ontwikkelaars**: Technische stakeholders die de simulatie gebruiken als testomgeving voor firmware en functionaliteiten. Ze hebben een hoge technische invloed en moeten nauw samenwerken met het ontwikkelingsteam.
+| **Stakeholder** | **Invloed (Power)** | **Belang (Interest)** | **Vereisten (Requirements)** |
+|---------------|----------------|----------------|----------------------|
+| **Brandweer (eindgebruikers & trainers)** | Hoog | Hoog | Realistische simulatie, gebruiksvriendelijke interface, trainingsscenario’s |
+| **Ontwikkelaars (Firmware & Simulatie)** | Hoog | Hoog | Simulatie moet firmware correct kunnen nabootsen, logging en debugging tools |
+| **Projectleiding / management** | Hoog | Laag | Voortgangsrapportage, binnen budget en planning blijven |
+| **IT-afdeling (beheer infrastructuur)** | Middel | Laag | Compatibiliteit met bestaande IT-infrastructuur, beveiliging |
+| **Hardwareleverancier van de onderzeedrone** | Middel | Hoog | Nauwkeurige weergave van hardwaregedrag in simulatie |
+| **Simulatorgebruikers buiten de brandweer (bijv. politie, kustwacht)** | Laag | Hoog | Mogelijkheid tot uitbreidingen voor andere diensten |
+| **Externe toezichthouders / regelgevende instanties** | Hoog | Laag | Voldoen aan regelgeving en veiligheidsnormen |
 
+---
+
+### **Aanbevolen Strategie voor de Product Owner**  
+1. **Hoge invloed & hoge interesse (Brandweer, Ontwikkelaars)**  
+   - Regelmatige afstemming en feedbackmomenten.  
+   - Prioriteit geven aan hun eisen en verwachtingen.  
+   
+2. **Hoge invloed & lage interesse (Projectleiding, Regelgevers)**  
+   - Periodieke updates zonder te veel details.  
+   - Betrekken bij besluitvorming op hoofdlijnen.  
+   
+3. **Lage invloed & hoge interesse (Simulatorgebruikers buiten de brandweer)**  
+   - Op de hoogte houden via nieuwsbrieven of presentaties.  
+   - Feedback verzamelen voor toekomstige verbeteringen.  
+   
+4. **Lage invloed & lage interesse (IT-afdeling)**  
+   - Alleen informeren wanneer er relevante technische veranderingen zijn.  
+
+### Software Requirements Specifications
 
 
 ### 4. Functionele Requirements

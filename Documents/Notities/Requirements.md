@@ -155,7 +155,7 @@ Aannames die invloed hebben op de verificatie- en validatiefasen van het V-model
 - **USE-1:** Het systeem MOET bruikbaar zijn voor brandweerlieden met beperkte technische expertise na training.
 - **USE-2:** Het systeem MOET duidelijke feedback geven voor alle gebruikersacties.
 
-### 3.3 Subsysteem/Component Requirements
+### 3.3 Subsysteem/C    omponent Requirements
 *Vormt basis voor integratietests en componententests in het V-model*
 
 #### 3.3.1 GUI Subsysteem
