@@ -1,14 +1,11 @@
-# Sprint 1 
+# Sprint 2 
 
 Hoe ziet sprint 1 eruit?
 De eerste sprint bestaat uit 4 dagen
->17/03 Maandag<br>
->18/03 Dinsdag<br>
->24/03 Maandag<br>
->25/03 Dinsdag<br>
 
-### Wat moet er af zijn aan het einde van Sprint 1
-De volgende taken moeten uitgevoerd worden tijdens Sprint 1 
+
+### Wat moet er af zijn aan het einde van Sprint 2
+De volgende taken moeten uitgevoerd worden tijdens Sprint 2 
 
 <table>
 <tr>

@@ -6,6 +6,8 @@ De eerste sprint bestaat uit 4 dagen
 >04/03 Dinsdag<br>
 >10/03 Maandag<br>
 >11/03 Dinsdag<br>
+>17/03 Maandag<br>
+>18/03 Dinsdag<br>
 
 ### Wat moet er af zijn aan het einde van Sprint 1
 De volgende taken moeten uitgevoerd worden tijdens Sprint 1 
@@ -33,6 +35,14 @@ Productowner Interview
 </td>
 <td width="33%">
 11/03
+</td>
+</tr>
+<tr>
+<td width="33%">
+Stakeholder requirements opgesteld
+</td>
+<td width="33%">
+17/03
 </td>
 </tr>
 </table>
@@ -75,3 +85,5 @@ De brondcode van de opdrachten op canvas inleveren.
 
 #### Verwerkt de resultaten van het productowner interview in de nieuwe requirements.
 
+## Productowner Interview
+Vanuit het gesprek met de productowner zijn stakeholder requirements opgesteld. Deze zullen in het begin van de tweede sprint besproken worden. En ook als basis dienen voor de verdere technische requirements aan desimulatie
