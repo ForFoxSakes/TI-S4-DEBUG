@@ -59,18 +59,15 @@ Succes met de uitwerking van de verantwoording!
 
 *Waar ik het meest trots op ben:*
     
-    Ik ben trots op het algemene oppakken en gestructureerd houden van het project in de eerste periode. Verder houd ik de workload onder controle, maar merk wel dat het snelm eer kan worden 
-    Ik ben trots op het algemene oppakken en gestructureerd houden van het project in de eerste periode. Verder houd ik de workload onder controle, maar merk wel dat het snelm eer kan worden 
+    Ik ben trots op het algemene oppakken en gestructureerd houden van het project in de eerste periode. Verder houd ik de workload onder controle, maar merk wel dat het snel meer kan worden 
     
 
 *Waar ik de afgelopen periode moeite mee heb gehad en welke actie ik heb ondernomen:*
 
     Het is nog een uidaging de planning om de twee werkdagen heen te plannen. Ik merk dat ik daar verder vooruit moet plannen
-    Het is nog een uidaging de planning om de twee werkdagen heen te plannen. Ik merk dat ik daar verder vooruit moet plannen
 
 *Wat ik nog graag wil leren en welke actie ik wil gaan ondernemen:*
 
-    Ik zou graag nog meer rondom de structuur van het SDFormat doorhebben, zodat ik een goede basis kan bouwen voor de Submarine Simulatie
     Ik zou graag nog meer rondom de structuur van het SDFormat doorhebben, zodat ik een goede basis kan bouwen voor de Submarine Simulatie
 ---
 
@@ -92,7 +89,7 @@ Indicatoren
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
-| <span style="color:green">Requirements Analyse</span> | `Requirements analyse opgesteld vanuit de stakeholderanalyse en interviews` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/1.%20Requirement%20Analyse.md) |
+| <code style="color : green">Requirements Analyse</code> | `Requirements analyse opgesteld vanuit de stakeholderanalyse en interviews` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/1.%20Requirement%20Analyse.md) |
 | <span style="color:green">Stakeholder Analyse</span>| `Belanghebbenden van het project geïdentificeerd, geanalyseerd en geclassificeerd op basis van hun belangen, invloed en betrokkenheid bij het project` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/1.%20Requirement%20Analyse.md) |
 | <span style="color:darkgoldenrod">Testplan</span>| `Teststrategie opgezet, testgevallen geïdentificeerd en Testresultaten genoteerd` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/9.%20Acceptatie%20Testen.md) |
 |  | `Benodigdheden voor Ontwikkeldocument vastgesteld en verzameld` | [link]() |
