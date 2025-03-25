@@ -93,7 +93,7 @@ Indicatoren
 |`Requirements Analyse`| `Requirements analyse opgesteld vanuit de stakeholderanalyse en interviews` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/1.%20Requirement%20Analyse.md) |
 | `Stakeholder Analyse`| `Belanghebbenden van het project geïdentificeerd, geanalyseerd en geclassificeerd op basis van hun belangen, invloed en betrokkenheid bij het project` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/1.%20Requirement%20Analyse.md) |
 |`Testplan`| `Teststrategie opgezet, testgevallen geïdentificeerd en Testresultaten genoteerd` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/9.%20Acceptatie%20Testen.md) |
-|`Ontwikkeldocument`|  `Benodigdheden voor Ontwikkeldocument vastgesteld en verzameld` | [link]() |
+
 
 ### Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
  
@@ -127,7 +127,7 @@ Indicatoren:
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
 | `Testverslag` | `Een testverslag opgesteld die vanuit de requirements eisen opstelt en toetst waaraan het systeem aan moet voen` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/9.%20Acceptatie%20Testen.md) |
-|`Ontwikkeldocument` | `systeem ontworpen vanuit de opgesteld requirements` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md) |
+
 
 Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
 
@@ -174,7 +174,7 @@ Beschrijving van de feedback die ik heb ontvangen op de portfolio-items.
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
-| `Adviesrapport` | `` | [link naar ...](http://) |
+
 
 Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
 
@@ -204,13 +204,7 @@ Indicatoren:
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
-| `Broncode simulatie`| `De brondcode geleverd van de uit te voeren simulatie` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#13-Bijlagen) |
-| `Projectcode` | `Alle code met betrekking tot het project` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#13-Bijlagen) |
-| `Vision opdrachten` | `Opdrachten Vision van College Computer Vision I (Basis beeldverwerking)` | [link naar ...](http://) |
-| `Algoritmiek opdrachten` | `Algoritmiek opdrachten van College Algoritmen & Datastructuren (C++ / Python)` | [link naar ...](http://) |
-| `C++ STL Opdrachten` | `Opdrachten van het College Labmda's ` | [link naar ...](http://) |
-| `C++<->Python opdrachten` | `Opdrachten van het College Koppeling Python ↔ C++ (Interfacing)` | [link naar ...](http://) |
-| `Creational/Structural design pattern opdrachten` | `Opdrachten van College Structural Design Patterns` | [link naar ...](http://) |
+
 
 Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
 
@@ -237,10 +231,9 @@ Indicatoren:
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
-| `Ontwikkeldocument` | `Beheren van een ontwikkeldocument om de ontwikkeling van het project bij te houden` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md) |
 | `Opdrachten ontwikkelomgeving` | `Opdrachten van College Ontwikkelomgeving opzetten` | [link](https://github.com/ForFoxSakes/TI-S4-VOS/tree/main/Opdrachten/Ontwikkelomgeving%20opzetten) |
 | `Opdrachten debugging/tooling` | `Opdrachten van College Intro & Desktop-Environment (VSCode, CMake, Debugger)` | [link](https://github.com/ForFoxSakes/TI-S4-VOS/tree/main/Opdrachten/Ontwikkelomgeving%20opzetten) |
-| `Testverslag` | `Testverslag bijgehouden van de uit te voeren tests` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/blob/main/Documents/Ontwikkeldocument.md#10-Testen) |
+
 
 
 Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
@@ -289,8 +282,6 @@ Indicatoren:
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
-| `Onwikkeldocument` | `In het ontwikkeldocument de randvoorwaarden en requirements opgesteld vanuit het problem` | [link](http://) |
-| `Scrum Board` | `Scrum board bijgehouden tijdens het project` | [link](http://) |
 |`Sprintverslagen` | `Bijhouden van sprintverslagen als reflectie op de sprints` | [link](https://github.com/ForFoxSakes/TI-S4-DEBUG/tree/main/Documents/Sprint) |
 
 
@@ -333,9 +324,7 @@ Beschrijving van de feedback die ik heb ontvangen op de portfolio-items.
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
-|`Onderzoeksverslag(deepdive)` | `Tijdens de deepdive in het onderzoeksverslag contact gezocht met specialisten relevant voor het project` | [link naar ...](http://) |
-|`Adviespresentatie` | `Presentatie waarin advies aan de productowner gegeven wordt gebaseerd op de bevindingen` | [link naar ...](http://) |
-| `Sprintverslagen (review)`| `Review van de Sprintverslagen` | [link naar ...](http://) |
+
 
 
 Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
@@ -362,9 +351,7 @@ Indicatoren:
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
 | `Sollicitatiebrief` | `Solicitatiebrief geschreven voor de functie van Technisch lead voor Submarine project` | [link](https://github.com/ForFoxSakes/TI-S4-VOS/tree/main/Opdrachten/Solicitatiebrief%20en%20CV) |
-| `Professionaliseringsdocument` | `Professionaliseringsdocument geschreven voor de functie van Technisch lead voor Submarine project` | [link naar ...](http://) |
 
-Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
 
 --
 
@@ -384,26 +371,12 @@ Indicatoren:
 ---
 
 
-**Leeruitkomst 9 Persoonlijke opdrachten:**
-
-| Portfolio-item     | Beschrijving                                           | Bewijslast               |
-|--------------------|--------------------------------------------------------|--------------------------|
-| `Portfolio-item A` | `plaats hier een korte uitleg over wat je hebt gedaan` | [link naar ...](http://) |
-
-Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
-
---
-
-Beschrijving van de feedback die ik heb ontvangen op de portfolio-items.
-
---
 
 **Leeruitkomst 9 Projectopdrachten:**
 
 | Portfolio-item     | Beschrijving                                           | Bewijslast               |
 |--------------------|--------------------------------------------------------|--------------------------|
-|`Onderzoeksverslag (deepdive)` | `problemen identificeren tijdens de deepdive en gepast handelen om dit probleem op te lossen ` | [link naar ...](http://) |
-| `Ontwikkeldocument` | `problemen identificeren in het ontwikkeldocumenten gepast handelen om dit probleem op te lossen ` | [link naar ...](http://) |
+
 
 Onderbouwing hoe deze portfolio-items hebben bijgedragen aan het aantonen van deze leeruitkomst.
 
