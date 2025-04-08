@@ -49,8 +49,6 @@ RUN git clone --branch sdf_9_5_0 https://github.com/gazebosim/sdformat.git /sdfo
     make && \
     sudo make install
 
-# Opruimen om de image kleiner te maken
-RUN rm -rf /var/lib/apt/lists/* /sdformat
 
 # Stel de werkdirectory in naar je src folder
 WORKDIR /workspaces/TI-S4-VOS/src
