@@ -763,6 +763,12 @@
 		{
 			"isGenerated" : true,
 			"path" : "/workspaces/TI-S4-DEBUG/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
+		},
+		{
+			"path" : "opdrachten/cpp1/CMakeLists.txt"
+		},
+		{
+			"path" : "opdrachten/cpp1/dracula.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/build/CMakeFiles /workspaces/TI-S4-DEBUG/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /workspaces/TI-S4-DEBUG/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/build/CMakeFiles /workspaces/TI-S4-DEBUG/build/opdrachten/cpp1//CMakeFiles/progress.marks
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opdrachten/cpp1/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opdrachten/cpp1/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,92 +103,80 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opdrachten/cpp1/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opdrachten/cpp1/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspaces/TI-S4-DEBUG/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named app
+# Convenience name for target.
+opdrachten/cpp1/CMakeFiles/cpp1.dir/rule:
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opdrachten/cpp1/CMakeFiles/cpp1.dir/rule
+.PHONY : opdrachten/cpp1/CMakeFiles/cpp1.dir/rule
 
-# Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
-.PHONY : app
-
-# fast build rule for target.
-app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-.PHONY : app/fast
-
-#=============================================================================
-# Target rules for targets named cpp1
-
-# Build rule for target.
-cpp1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp1
+# Convenience name for target.
+cpp1: opdrachten/cpp1/CMakeFiles/cpp1.dir/rule
 .PHONY : cpp1
 
 # fast build rule for target.
 cpp1/fast:
-	$(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/build
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/build
 .PHONY : cpp1/fast
 
-Logger.o: Logger.cc.o
-.PHONY : Logger.o
+__/__/Logger.o: __/__/Logger.cc.o
+.PHONY : __/__/Logger.o
 
 # target to build an object file
-Logger.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Logger.cc.o
-.PHONY : Logger.cc.o
+__/__/Logger.cc.o:
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/__/__/Logger.cc.o
+.PHONY : __/__/Logger.cc.o
 
-Logger.i: Logger.cc.i
-.PHONY : Logger.i
+__/__/Logger.i: __/__/Logger.cc.i
+.PHONY : __/__/Logger.i
 
 # target to preprocess a source file
-Logger.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Logger.cc.i
-.PHONY : Logger.cc.i
+__/__/Logger.cc.i:
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/__/__/Logger.cc.i
+.PHONY : __/__/Logger.cc.i
 
-Logger.s: Logger.cc.s
-.PHONY : Logger.s
+__/__/Logger.s: __/__/Logger.cc.s
+.PHONY : __/__/Logger.s
 
 # target to generate assembly for a file
-Logger.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Logger.cc.s
-.PHONY : Logger.cc.s
+__/__/Logger.cc.s:
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/__/__/Logger.cc.s
+.PHONY : __/__/Logger.cc.s
 
-main.o: main.cc.o
-.PHONY : main.o
+opdracht1.o: opdracht1.cc.o
+.PHONY : opdracht1.o
 
 # target to build an object file
-main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cc.o
-.PHONY : main.cc.o
+opdracht1.cc.o:
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/opdracht1.cc.o
+.PHONY : opdracht1.cc.o
 
-main.i: main.cc.i
-.PHONY : main.i
+opdracht1.i: opdracht1.cc.i
+.PHONY : opdracht1.i
 
 # target to preprocess a source file
-main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cc.i
-.PHONY : main.cc.i
+opdracht1.cc.i:
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/opdracht1.cc.i
+.PHONY : opdracht1.cc.i
 
-main.s: main.cc.s
-.PHONY : main.s
+opdracht1.s: opdracht1.cc.s
+.PHONY : opdracht1.s
 
 # target to generate assembly for a file
-main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cc.s
-.PHONY : main.cc.s
+opdracht1.cc.s:
+	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/opdracht1.cc.s
+.PHONY : opdracht1.cc.s
 
 # Help Target
 help:
@@ -198,14 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... app"
 	@echo "... cpp1"
-	@echo "... Logger.o"
-	@echo "... Logger.i"
-	@echo "... Logger.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... __/__/Logger.o"
+	@echo "... __/__/Logger.i"
+	@echo "... __/__/Logger.s"
+	@echo "... opdracht1.o"
+	@echo "... opdracht1.i"
+	@echo "... opdracht1.s"
 .PHONY : help
 
 
@@ -217,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspaces/TI-S4-DEBUG/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

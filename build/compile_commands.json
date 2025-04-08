@@ -10,5 +10,17 @@
   "command": "/usr/bin/c++ -DENABLE_LOGGING  -g -std=gnu++17 -o CMakeFiles/app.dir/Logger.cc.o -c /workspaces/TI-S4-DEBUG/src/Logger.cc",
   "file": "/workspaces/TI-S4-DEBUG/src/Logger.cc",
   "output": "CMakeFiles/app.dir/Logger.cc.o"
+},
+{
+  "directory": "/workspaces/TI-S4-DEBUG/build/opdrachten/cpp1",
+  "command": "/usr/bin/c++ -DENABLE_LOGGING -I/workspaces/TI-S4-DEBUG/src/opdrachten/cpp1/../.. -g -std=gnu++17 -o CMakeFiles/cpp1.dir/opdracht1.cc.o -c /workspaces/TI-S4-DEBUG/src/opdrachten/cpp1/opdracht1.cc",
+  "file": "/workspaces/TI-S4-DEBUG/src/opdrachten/cpp1/opdracht1.cc",
+  "output": "opdrachten/cpp1/CMakeFiles/cpp1.dir/opdracht1.cc.o"
+},
+{
+  "directory": "/workspaces/TI-S4-DEBUG/build/opdrachten/cpp1",
+  "command": "/usr/bin/c++ -DENABLE_LOGGING -I/workspaces/TI-S4-DEBUG/src/opdrachten/cpp1/../.. -g -std=gnu++17 -o CMakeFiles/cpp1.dir/__/__/Logger.cc.o -c /workspaces/TI-S4-DEBUG/src/Logger.cc",
+  "file": "/workspaces/TI-S4-DEBUG/src/Logger.cc",
+  "output": "opdrachten/cpp1/CMakeFiles/cpp1.dir/__/__/Logger.cc.o"
 }
 ]
