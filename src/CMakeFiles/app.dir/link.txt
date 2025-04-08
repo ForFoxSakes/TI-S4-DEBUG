@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/app.dir/main.cc.o CMakeFiles/app.dir/Logger.cc.o -o app 

@@ -18,3 +18,7 @@ add_executable(app
     main.cc
     Logger.cc
 )
+
+# Voeg subdirectory toe voor opdrachten
+add_subdirectory(opdrachten/cpp1)
+
