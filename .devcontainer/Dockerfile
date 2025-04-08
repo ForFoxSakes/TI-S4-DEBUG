@@ -19,25 +19,40 @@ RUN apt-get update && apt-get install -y \
     clang-tidy \
     valgrind \
     curl \
-    sdformat \
     sudo \
-    
-    wget
+    wget \
+    libboost-all-dev \
+    libprotobuf-dev \
+    protobuf-compiler \
+    libyaml-cpp-dev \
+    pkg-config
 
-
-# Voeg de Gazebo repository toe
+# Installeer Gazebo afhankelijkheden en andere tools
 RUN curl -fsSL https://packages.osrfoundation.org/gazebo.gpg -o /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
-
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" > /etc/apt/sources.list.d/gazebo-stable.list
-
-# Werk de pakketlijst bij en installeer Gazebo Ionic
 RUN apt-get update && apt-get install -y gz-ionic
 
-# Opruimen
-RUN rm -rf /var/lib/apt/lists/*
+# Installeer de benodigde dependencies voor sdformat
+RUN apt-get update && apt-get install -y \
+    libtinyxml2-dev \
+    libboost-dev \
+    libboost-system-dev \
+    libboost-filesystem-dev \
+    libboost-program-options-dev
 
+# Kloneren en bouwen van de sdformat broncode
+RUN git clone --branch sdf_9_5_0 https://github.com/gazebosim/sdformat.git /sdformat && \
+    cd /sdformat && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    sudo make install
 
-#Stel de werkdirectory in naar je src folder
+# Opruimen om de image kleiner te maken
+RUN rm -rf /var/lib/apt/lists/* /sdformat
+
+# Stel de werkdirectory in naar je src folder
 WORKDIR /workspaces/TI-S4-VOS/src
 
 CMD ["sleep", "infinity"]
