@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
     git \
     gnupg2 \
     lsb-release \
+    libtinyxml2.6.2v5 \
+    libtinyxml2-dev \
     vim \
     clang \
     clang-format \
@@ -18,6 +20,7 @@ RUN apt-get update && apt-get install -y \
     valgrind \
     curl \
     sudo \
+    
     wget
 
 
