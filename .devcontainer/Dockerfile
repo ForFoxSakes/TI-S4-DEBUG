@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
     clang-tidy \
     valgrind \
     curl \
+    sdformat \
     sudo \
     
     wget
