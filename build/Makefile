@@ -142,6 +142,19 @@ cpp1/fast:
 	$(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/build
 .PHONY : cpp1/fast
 
+#=============================================================================
+# Target rules for targets named test_executable
+
+# Build rule for target.
+test_executable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_executable
+.PHONY : test_executable
+
+# fast build rule for target.
+test_executable/fast:
+	$(MAKE) $(MAKESILENT) -f opdrachten/test/CMakeFiles/test_executable.dir/build.make opdrachten/test/CMakeFiles/test_executable.dir/build
+.PHONY : test_executable/fast
+
 Logger.o: Logger.cc.o
 .PHONY : Logger.o
 
@@ -200,6 +213,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... app"
 	@echo "... cpp1"
+	@echo "... test_executable"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"

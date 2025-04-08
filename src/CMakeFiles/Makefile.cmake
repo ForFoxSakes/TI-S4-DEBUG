@@ -7,6 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/usr/lib/x86_64-linux-gnu/cmake/tinyxml2/tinyxml2-config-version.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/tinyxml2/tinyxml2-config.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/tinyxml2/tinyxml2-shared-targets-none.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/tinyxml2/tinyxml2-shared-targets.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
@@ -31,6 +35,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeLists.txt"
   "opdrachten/cpp1/CMakeLists.txt"
   "opdrachten/cpp1/dracula.txt"
+  "opdrachten/test/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -44,10 +49,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "opdrachten/cpp1/dracula.txt"
   "opdrachten/cpp1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "opdrachten/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/app.dir/DependInfo.cmake"
   "opdrachten/cpp1/CMakeFiles/cpp1.dir/DependInfo.cmake"
+  "opdrachten/test/CMakeFiles/test_executable.dir/DependInfo.cmake"
   )

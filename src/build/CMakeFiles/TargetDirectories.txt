@@ -1,3 +1,0 @@
-/workspaces/TI-S4-DEBUG/src/build/CMakeFiles/app.dir
-/workspaces/TI-S4-DEBUG/src/build/CMakeFiles/edit_cache.dir
-/workspaces/TI-S4-DEBUG/src/build/CMakeFiles/rebuild_cache.dir

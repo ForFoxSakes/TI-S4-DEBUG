@@ -224,6 +224,18 @@ TI-S4_DEBUG_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 TI-S4_DEBUG_SOURCE_DIR:STATIC=/workspaces/TI-S4-DEBUG/src
 
+//Value Computed by CMake
+TestProject_BINARY_DIR:STATIC=/workspaces/TI-S4-DEBUG/src/opdrachten/test
+
+//Value Computed by CMake
+TestProject_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+TestProject_SOURCE_DIR:STATIC=/workspaces/TI-S4-DEBUG/src/opdrachten/test
+
+//The directory containing a CMake configuration file for TinyXML2.
+TinyXML2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+
 
 ########################
 # INTERNAL cache entries
@@ -329,7 +341,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

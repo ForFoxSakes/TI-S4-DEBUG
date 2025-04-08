@@ -65,15 +65,18 @@ CMAKE_BINARY_DIR = /workspaces/TI-S4-DEBUG/build
 # The main recursive "all" target.
 all: CMakeFiles/app.dir/all
 all: opdrachten/cpp1/all
+all: opdrachten/test/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: opdrachten/cpp1/preinstall
+preinstall: opdrachten/test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/app.dir/clean
 clean: opdrachten/cpp1/clean
+clean: opdrachten/test/clean
 .PHONY : clean
 
 #=============================================================================
@@ -90,6 +93,21 @@ opdrachten/cpp1/preinstall:
 # Recursive "clean" directory target.
 opdrachten/cpp1/clean: opdrachten/cpp1/CMakeFiles/cpp1.dir/clean
 .PHONY : opdrachten/cpp1/clean
+
+#=============================================================================
+# Directory level rules for directory opdrachten/test
+
+# Recursive "all" directory target.
+opdrachten/test/all: opdrachten/test/CMakeFiles/test_executable.dir/all
+.PHONY : opdrachten/test/all
+
+# Recursive "preinstall" directory target.
+opdrachten/test/preinstall:
+.PHONY : opdrachten/test/preinstall
+
+# Recursive "clean" directory target.
+opdrachten/test/clean: opdrachten/test/CMakeFiles/test_executable.dir/clean
+.PHONY : opdrachten/test/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/app.dir
@@ -124,12 +142,12 @@ CMakeFiles/app.dir/clean:
 opdrachten/cpp1/CMakeFiles/cpp1.dir/all:
 	$(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/depend
 	$(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TI-S4-DEBUG/build/CMakeFiles --progress-num=4,5,6 "Built target cpp1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TI-S4-DEBUG/build/CMakeFiles --progress-num=4,5 "Built target cpp1"
 .PHONY : opdrachten/cpp1/CMakeFiles/cpp1.dir/all
 
 # Build rule for subdir invocation for target.
 opdrachten/cpp1/CMakeFiles/cpp1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opdrachten/cpp1/CMakeFiles/cpp1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/build/CMakeFiles 0
 .PHONY : opdrachten/cpp1/CMakeFiles/cpp1.dir/rule
@@ -142,6 +160,32 @@ cpp1: opdrachten/cpp1/CMakeFiles/cpp1.dir/rule
 opdrachten/cpp1/CMakeFiles/cpp1.dir/clean:
 	$(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/clean
 .PHONY : opdrachten/cpp1/CMakeFiles/cpp1.dir/clean
+
+#=============================================================================
+# Target rules for target opdrachten/test/CMakeFiles/test_executable.dir
+
+# All Build rule for target.
+opdrachten/test/CMakeFiles/test_executable.dir/all:
+	$(MAKE) $(MAKESILENT) -f opdrachten/test/CMakeFiles/test_executable.dir/build.make opdrachten/test/CMakeFiles/test_executable.dir/depend
+	$(MAKE) $(MAKESILENT) -f opdrachten/test/CMakeFiles/test_executable.dir/build.make opdrachten/test/CMakeFiles/test_executable.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TI-S4-DEBUG/build/CMakeFiles --progress-num=6,7 "Built target test_executable"
+.PHONY : opdrachten/test/CMakeFiles/test_executable.dir/all
+
+# Build rule for subdir invocation for target.
+opdrachten/test/CMakeFiles/test_executable.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opdrachten/test/CMakeFiles/test_executable.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TI-S4-DEBUG/build/CMakeFiles 0
+.PHONY : opdrachten/test/CMakeFiles/test_executable.dir/rule
+
+# Convenience name for target.
+test_executable: opdrachten/test/CMakeFiles/test_executable.dir/rule
+.PHONY : test_executable
+
+# clean rule for target.
+opdrachten/test/CMakeFiles/test_executable.dir/clean:
+	$(MAKE) $(MAKESILENT) -f opdrachten/test/CMakeFiles/test_executable.dir/build.make opdrachten/test/CMakeFiles/test_executable.dir/clean
+.PHONY : opdrachten/test/CMakeFiles/test_executable.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

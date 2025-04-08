@@ -154,30 +154,6 @@ __/__/Logger.cc.s:
 	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/__/__/Logger.cc.s
 .PHONY : __/__/Logger.cc.s
 
-opdracht1.o: opdracht1.cc.o
-.PHONY : opdracht1.o
-
-# target to build an object file
-opdracht1.cc.o:
-	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/opdracht1.cc.o
-.PHONY : opdracht1.cc.o
-
-opdracht1.i: opdracht1.cc.i
-.PHONY : opdracht1.i
-
-# target to preprocess a source file
-opdracht1.cc.i:
-	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/opdracht1.cc.i
-.PHONY : opdracht1.cc.i
-
-opdracht1.s: opdracht1.cc.s
-.PHONY : opdracht1.s
-
-# target to generate assembly for a file
-opdracht1.cc.s:
-	cd /workspaces/TI-S4-DEBUG/build && $(MAKE) $(MAKESILENT) -f opdrachten/cpp1/CMakeFiles/cpp1.dir/build.make opdrachten/cpp1/CMakeFiles/cpp1.dir/opdracht1.cc.s
-.PHONY : opdracht1.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -190,9 +166,6 @@ help:
 	@echo "... __/__/Logger.o"
 	@echo "... __/__/Logger.i"
 	@echo "... __/__/Logger.s"
-	@echo "... opdracht1.o"
-	@echo "... opdracht1.i"
-	@echo "... opdracht1.s"
 .PHONY : help
 
 

@@ -1,0 +1,12 @@
+<world name="car_world">
+    <light name="sun">
+        <pose>0.000000 0.000000 10.000000</pose>
+        <diffuse>0.800000 0.800000 0.800000 1</diffuse>
+        <cast_shadows>true</cast_shadows>
+    </light>
+    <model name="submarine">
+        <inertial>
+            <mass>1.000000</mass>
+        </inertial>
+    </model>
+</world>

@@ -45,6 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/workspaces/TI-S4-DEBUG/build/opdrachten/cpp1/cmake_install.cmake")
+  include("/workspaces/TI-S4-DEBUG/build/opdrachten/test/cmake_install.cmake")
 
 endif()
 
