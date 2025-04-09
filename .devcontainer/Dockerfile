@@ -33,7 +33,7 @@ RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/p
 RUN apt-get update && apt-get install -y gz-ionic
 
 # Installeer de benodigde dependencies voor sdformat
-RUN apt-get update && apt-get install -y \
+RUN apt-get install -y \
     libtinyxml2-dev \
     libboost-dev \
     libboost-system-dev \
