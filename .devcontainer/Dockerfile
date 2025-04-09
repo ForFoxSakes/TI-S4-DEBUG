@@ -40,14 +40,7 @@ RUN apt-get install -y \
     libboost-filesystem-dev \
     libboost-program-options-dev
 
-# Kloneren en bouwen van de sdformat broncode
-RUN git clone --branch sdf_9_5_0 https://github.com/gazebosim/sdformat.git /sdformat && \
-    cd /sdformat && \
-    mkdir build && \
-    cd build && \
-    cmake .. && \
-    make && \
-    sudo make install
+
 
 
 # Stel de werkdirectory in naar je src folder
