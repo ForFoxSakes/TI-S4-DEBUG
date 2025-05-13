@@ -12,7 +12,7 @@ k = np.array([[-1,-1,-1],
 e = cv2.filter2D(grey, -1, k)
 rangefilter = cv2.inRange(e, 50, 255)
 
-# gee; alleen op randen
+# geel alleen op randen
 glow = np.zeros_like(img)
 glow[rangefilter==255] = [0,255,255]
 image = cv2.addWeighted(img, .4, glow, 1, 0)
